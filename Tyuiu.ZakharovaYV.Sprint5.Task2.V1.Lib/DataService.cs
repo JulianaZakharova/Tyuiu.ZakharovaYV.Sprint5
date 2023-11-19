@@ -64,7 +64,7 @@ namespace Tyuiu.ZakharovaYV.Sprint5.Task2.V1.Lib
                 }
 
                 str = "";
-            }
+            } 
             return path;
         }
     }
