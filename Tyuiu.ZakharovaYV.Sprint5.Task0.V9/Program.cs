@@ -15,7 +15,7 @@ namespace Tyuiu.ZakharovaYV.Sprint5.Task0.V9
             int x = 3;
 
             DataService ds = new DataService();
-            Console.Title = "Спринт#4 |Выполнила: Захарова Ю.В. |ПКТб-23-2";
+            Console.Title = "Спринт#5 |Выполнила: Захарова Ю.В. |ПКТб-23-2";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт#5                                                                *");
             Console.WriteLine("* Тема:Класс File. Запись данных в текстовый файл                         *");
