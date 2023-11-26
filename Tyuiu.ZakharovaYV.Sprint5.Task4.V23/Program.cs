@@ -17,7 +17,7 @@ namespace Tyuiu.ZakharovaYV.Sprint5.Task4.V23
             Console.Title = "Спринт#5 |Выполнила: Захарова Ю.В. |ПКТб-23-2";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт#5                                                                *");
-            Console.WriteLine("* Тема:Потоковый метод записи данных в бинарный файл                      *");
+            Console.WriteLine("* Тема:Чтение данных из текстового файла                                  *");
             Console.WriteLine("* Задание # 4                                                             *");
             Console.WriteLine("* Вариант # 23                                                            *");
             Console.WriteLine("* Выполнила: Захарова Юлиана Владимировна | ПКТб-23-2                     *");
