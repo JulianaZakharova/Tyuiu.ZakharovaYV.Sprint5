@@ -13,36 +13,63 @@ namespace Tyuiu.ZakharovaYV.Sprint5.Task7.V30.Lib
     {
         public string LoadDataAndSave(string path)
         {
-            string pathSaveFile = $@"C:\DataSprint5\OutPutDataFileTask7V30.txt";;
-
-            FileInfo fileInfo = new FileInfo(pathSaveFile);
+            string pathSaveFile = @"C:\DataSprint5\OutPutDataFileTask7V30.txt";
+            FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
-
-            if (fileExists)
+            if(fileExists)
             {
                 File.Delete(pathSaveFile);
             }
-
             string strLine = "";
-            using (StreamReader reader = new StreamReader(path))
+            using(StreamReader reader = new StreamReader(path))
             {
                 string line;
+                int numericValue;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    for (int i = 0; i < line.Length; i++)
+                    string[] mas = line.Split(' ');
+                    for(int i = 0; i < mas.Length; i++)
                     {
-                        if (line[i] >= 0 && line[i] <= 9)
+                        if (mas [i].Length == 1 && int.TryParse(mas[i], out numericValue))
                         {
-                            strLine += "9";
+                            strLine += " 9 ";
                         }
-
-                    }
-
+                        else 
+                        {
+                            strLine += mas[i] + " ";
+                        }
+                       
+                    } 
                     File.AppendAllText(pathSaveFile, strLine + Environment.NewLine);
-                    strLine = "";
+                        strLine = "";
                 }
             }
             return pathSaveFile;
+
+            
+
+            //string res = File.ReadAllText(path);
+            //int array = new char[res.Length];
+
+
+            //for (int i = 0; i < res.Length; i++)
+            {
+               // if ((res[i] >= '0') & (res[i + 1] == ' '))
+                {
+                 //   res[i] = '9'; 
+                }
+                //else
+                {
+                  //  array[i] = res[i];
+                }
+            } 
+              //  using (StreamWriter writer = new StreamWriter(pathSaveFile))
+                {
+                 //   writer.Write(array);
+                } 
+           // return pathSaveFile;
         }
+           
     }
+          
 }

@@ -19,8 +19,21 @@ namespace Tyuiu.ZakharovaYV.Sprint5.Task5.V17.Lib
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    res = res + Convert.ToDouble(line);
+                    if ((Convert.ToInt32(Convert.ToDouble(line)) == Convert.ToDouble(line)) && (Convert.ToDouble(line) >= 0))
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        continue;
+                    }
                     
+                    
+                }
+                 res = 0;
+                for (int i = 1; i <= Convert.ToDouble(line); i++)
+                {
+                    res = res + Convert.ToDouble(line);
                 }
             }
             return res;

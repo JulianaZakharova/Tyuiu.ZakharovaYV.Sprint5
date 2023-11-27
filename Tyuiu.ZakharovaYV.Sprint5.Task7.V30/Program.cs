@@ -23,7 +23,7 @@ namespace Tyuiu.ZakharovaYV.Sprint5.Task7.V30
             Console.WriteLine("* Выполнила: Захарова Юлиана Владимировна | ПКТб-23-2                     *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* аменить все однозначные числа на число 9. Полученный результат         *");
+            Console.WriteLine("* аменить все однозначные числа на число 9. Полученный результат          *");
             Console.WriteLine("* сохранить в файл OutPutDataFileTask7V30.txt.                            *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
@@ -39,8 +39,9 @@ namespace Tyuiu.ZakharovaYV.Sprint5.Task7.V30
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Находится в файле : ");
-            pathSaveFile = ds.LoadDataAndSave(path);
+            Console.WriteLine("Находятся в файле : ");
+
+            string w = ds.LoadDataAndSave(path);
             Console.WriteLine(pathSaveFile);
             Console.ReadKey();
 
